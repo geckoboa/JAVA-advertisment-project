@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.vjezbe.MenuController">
+	<!-- TODO Add Nodes -->
+	<top>
+		<MenuBar BorderPane.alignment="CENTER">
+			<menus>
+				<Menu mnemonicParsing="false" text="Artikli">
+					<items>
+						<Menu mnemonicParsing="false" text="Automobili">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#prikaziPretraguAutomobila" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziUnosAutomobila" text="Unos" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Stanovi">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#prikaziPretraguStanova" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziUnosStanova" text="Unos" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Usluge">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#prikaziPretraguUsluga" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziUnosUsluga" text="Unos" />
+							</items>
+						</Menu>
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Korisnici">
+					<items>
+						<Menu mnemonicParsing="false" text="Poslovni korisnik">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#prikaziPretraguPoslovnihKorisnika" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziUnosPoslovnihKorisnika" text="Unos" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Privatni korisnik">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#prikaziPretraguPrivatnihKorisnika" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziUnosPrivatneKorisnike" text="Unos" />
+							</items>
+						</Menu>
+					</items>
+				</Menu>
+            <Menu mnemonicParsing="false" text="Prodaja">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#prikaziProdaju" text="Pretraga" />
+                  <MenuItem mnemonicParsing="false" onAction="#prikaziUnosProdaje" text="Unos" />
+              </items>
+            </Menu>
+			</menus>
+		</MenuBar>
+	</top>
+   <bottom>
+      <Label fx:id="labelZadnjiAutomobil" text="Label" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
