@@ -1,4 +1,4 @@
-# JAVA-project
+# JAVA-advertisement-project
 Console and MVC
 
 The theme of the project is advertisement.
